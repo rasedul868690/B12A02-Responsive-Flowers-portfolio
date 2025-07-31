@@ -1,0 +1,404 @@
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef3fa;
+}
+
+/*shared */
+.fc-color{
+    color: #8987A1;
+}
+.orange{
+    color: #E95A08;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+nav ul{         
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav li a{
+    text-decoration: none;
+}
+.cart{
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
+.header-flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 980px;
+    margin:0 auto;
+}
+.header{
+    margin-top: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Noto Serif;
+}
+
+/*Our Plants*/
+.product-section {
+  padding: 5px 5px;
+  
+  max-width: 980px;
+  margin: 100px auto;
+  background-color: #eef3fa;
+}
+.product-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+}
+.product-section h2 span {
+  color: #ff4d00; /* Orange "Our" */
+}
+.description {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  color: #555;
+  font-size: 16px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 5px;
+}
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px;
+  text-align: center;
+  /*box-shadow: 0 4px 10px rgba(0,0,0,0.08);*/
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+.product-card .price {
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+.product-card button {
+  background-color: #ff5c00;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+.product-card button:hover {
+  background-color: #e04d00;
+}
+
+/*Flower & Plants Lover*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 100px auto;
+  background-color: #eef3fa;
+}
+.image-section {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content-section {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  background-color: #eef3fa;
+}
+.badge {
+  width: 200px;
+  position: absolute;
+  top: -80px;
+  left: -120px;
+}
+h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #222;
+  font-weight: bold;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  list-style: circle;
+  color: #555;
+}
+
+/* Deals Section */
+.deals-section {
+  padding: 10px 10px;
+  text-align: center;
+  font-family: Noto Serif;
+  margin-top: -100px;
+}
+.heading h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.heading .highlight {
+  color: orange;
+  font-weight: bold;
+}
+.heading p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #666;
+  line-height: 1.6;
+}
+.deals-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 70px 0px;
+}
+.left-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card .overlay {
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.card h2, .card h4 {
+  margin: 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+.card.small {
+  width: 310px;
+  height: 150px;
+}
+.card.large {
+  width: 650px;
+  height: 320px;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-image: url('../images/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+.newsletter .overlay {
+  display: inline-block;
+  padding: 40px;
+  border-radius: 10px;
+}
+.newsletter h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+.form-group input {
+  padding: 5px;
+  width: 400px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+.form-group button {
+  padding: 5px 20px;
+  background-color: #E95A08;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.text{
+  color:#555
+}
+
+/* Footer Section */
+footer {
+    padding: 50px 20px;
+    border-top: 1px solid #ddd;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 980px;
+    margin:0 auto;
+}
+.footer-left p {
+    color: #555;
+}
+.footer-links {
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+}
+.footer-links ul li {
+    margin-bottom: 8px;
+    list-style: none;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-links .socials a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+.footer-links :hover {
+    color: blue;
+}
+.socials a{
+    display: inline-block;
+    gap: 50px; 
+}
+
+
+  /* Responsive for mobile phones */
+  
+@media screen and (max-width:576px) {
+    .header-bg img, .description, 
+    .cart{
+      flex-direction: column;
+    
+  }
+  .cart{
+    display: flex;
+    align-items: center;
+    
+  }
+  .display{
+    display: none;
+  }
+  .header{
+    padding: 10px;
+  }
+  .description{
+    width: 100%;
+    padding: 5px;
+    }
+    .product-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .badge{
+      display: none;
+    }
+   
+    .newsletter{
+      width: 100%;
+      padding: 5px;
+    }
+    .newsletter{
+      width: 100%;
+      padding: 10px;
+    }
+    .overlay h2{
+      font-size: 20px;
+      text-align: justify;
+      
+    }
+    .form-group input{
+      width: 200px;
+    }
+    .bg-white {
+      padding: 40px;
+    }
+
+
+}
+    
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

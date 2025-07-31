@@ -3,9 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Webside</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/repo.css">
+
+    
 </head>
 <body>
+    <header class="main-header">
+        <div class="header-bg">
+            <nav>
+                <img src="images/logo.png" alt="">
+                <ul>
+                    <li><a class="display" href="">Home</a></li>
+                    <li><a class="fc-color display" href="">shop</a></li>
+                    <li><a class="fc-color display" href="">About us</a></li>
+                    <li class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart ($56)</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-flex mt-6">
+            <div class="header">
+                <h2>ALWAYS <span class="orange">FRESH<span></h2>
+                <h2 class="orange">FLOWERS</h2>
+            </div>
+            <div class="fimage">
+                <img src="images/hero-flower.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!--Our Plants-->
+   <section class="product-section text-center ">
+      <h2><span>Our</span> Plants</h2>
+      <p class="description">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop.
+        From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </p>
+
+      <div class="product-grid">
+        <!-- Repeat this card for multiple items -->
+          <div class="product-card">
+              <img src="images/sample-flower-image.png" alt="Lily Blossom">
+              <h3>Lily Blossom</h3>
+              <p class="price">20 USD</p>
+              <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+              <img src="images/sample-flower-image.png" alt="Lily Blossom">
+              <h3>Lily Blossom</h3>
+              <p class="price">20 USD</p>
+              <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/sample-flower-image.png" alt="Lily Blossom">
+            <h3>Lily Blossom</h3>
+            <p class="price">20 USD</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/sample-flower-image.png" alt="Lily Blossom">
+            <h3>Lily Blossom</h3>
+            <p class="price">20 USD</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/sample-flower-image.png" alt="Lily Blossom">
+            <h3>Lily Blossom</h3>
+            <p class="price">20 USD</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/sample-flower-image.png" alt="Lily Blossom">
+            <h3>Lily Blossom</h3>
+            <p class="price">20 USD</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/sample-flower-image.png" alt="Lily Blossom">
+            <h3>Lily Blossom</h3>
+            <p class="price">20 USD</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/sample-flower-image.png" alt="Lily Blossom">
+            <h3>Lily Blossom</h3>
+            <p class="price">20 USD</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Repeat more cards as needed -->
+        <!-- You can use a loop in your backend to generate these dynamically -->
+      </div>
+  </section>
+
+    <!--Flower & Plants Lover-->
+    <section class="container">
+      <div class="image-section">
+        <img src="images/flower-store.png" alt="Flower Shop">
+      </div>
+      <div class="content-section">
+          <img src="images/trusted-badge.png" alt="Trusted Seller" class="badge">
+          <h1>Flower & Plants<br> Lover</h1>
+          <ul>
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+          </ul>
+      </div>
+  </section>
     
+
+    <!--Latest Deals-->
+    <section class="deals-section">
+		<div class="heading">
+		  <h1><span class="highlight">Latest</span> Deals</h1>
+		  <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+		</div>
+		
+		<div class="deals-container">
+		  <div class="left-cards">
+			<div class="card small" style="background-image: url('images/deal-bloom.png');">
+			  <div class="overlay">
+				<h4>60% Off | Bloom Plant</h4>
+				<a href="#">Shop Now</a>
+			  </div>
+			</div>
+			<div class="card small" style="background-image: url('images/deal-ana.png');">
+			  <div class="overlay">
+				<h4>30% Off | Ana Plant</h4>
+				<a href="#">Shop Now</a>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="card large" style="background-image: url('images/deal-zabo.png');">
+			<div class="overlay">
+			  <h2>25% Off | Zabo Plant</h2>
+			  <a href="#">Shop Now</a>
+			</div>
+		  </div>
+
+		</div>
+    </section>
+
+    <section class="newsletter">
+		<div class="overlay">
+		  <h2>Join the colorful Bunch</h2>
+		  <div class="form-group">
+			<input class="text" type="email" placeholder="Write email" />
+			<button>Subscribe</button>
+		  </div>
+		</div>
+	</section>
+
+      <!-- Footer Section -->
+  <footer class="bg-white ">
+    <div class="footer-container">
+      <div class="footer-left mt-[20px] max-w-[250px]">
+        <img src="images/logo.png" alt="">
+        <p class="text-base mt-[10px] ">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+      </div>
+      <div class="footer-links flex">
+        <div>
+            <h4>Home</h4>
+            <ul>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Features</h4>
+            <ul>
+                <li>Pricing</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Help Center</li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a href="#"><img src="images/icon-linkedin.png" alt=""></a>
+            <a href="#"><img src="images/icon-twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/"><img src="images/icon-facebook.png" alt=""></a>
+            <a href="https://www.youtube.com/"><img src="images/icon-youtube.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
